@@ -1,0 +1,139 @@
+:root{
+    /* -----------PRIMARY COLORS------------- */
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+/* ---------------NEUTRAL COLORS------------- */
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+
+    /* --------------OUTLINES------------------ */
+    --Red-outline:1px solid red;
+    --Orange-outline:1px solid orange;
+    --Blue-outline:1px solid Blue;
+}
+@font-face{
+    font-family: 'Plus';
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Light-grayish-blue-2);
+    font-family: 'Plus';
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: var(--White);
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header p:hover{
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--Blue);
+}
+.notification{
+    padding: 2%;
+    gap: 3%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.notification h4{
+    background-color: var(--Blue);
+    padding: 2% 6%;
+    border-radius: 3px;
+    color: var(--White);
+}
+header p{
+    color: var(--Dark-grayish-blue);
+}
+
+/* ------------------NOTIFICATION BARS--------------------- */
+section{
+    background-color: var(--Very-light-grayish-blue);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+section img{
+    width: 45px;
+}
+section img:hover{
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+section p, section span{
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+}
+.content p{
+    width: 100%;
+}
+.name, .post{
+    font-weight: 700;
+}
+.name{
+    color: var(--Very-dark-blue);
+}
+.name:hover,.post:hover{
+    cursor: pointer;
+    color: var(--Blue);
+}
+.post{
+    color: var(--Very-dark-blue);
+}
+.time{
+    text-align: start;
+    padding:1% 0;
+    color: var(--Dark-grayish-blue);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+footer p a{
+    font-weight: 700;
+    text-decoration: none;
+}
+.dot{
+    justify-self: flex-end;
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    background-color: var(--Red);
+}
+
+/* Media Queries for different screen variations */
+@media only screen and (min-width:700px){
+    .container{
+        border-radius: 15px;
+        width:70% ;
+        padding: 3%;
+    }
+}
