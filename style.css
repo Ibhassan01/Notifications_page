@@ -27,7 +27,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--Light-grayish-blue-2);
     font-family: 'Plus';
     padding: 20px;
     display: flex;
@@ -74,6 +73,10 @@ section{
     display: flex;
     align-items: center;
     gap: 3%;
+    transition: .3s;
+}
+section:hover{
+    box-shadow: 1px 10px 10px rgba(128, 128, 128, 0.447);
 }
 section img{
     width: 45px;
@@ -128,9 +131,15 @@ footer p a{
     width: 8px;
     background-color: var(--Red);
 }
+.read{
+    background-color: white;
+}
 
 /* Media Queries for different screen variations */
 @media only screen and (min-width:700px){
+    body{
+        background-color: var(--Light-grayish-blue-2);
+    }
     .container{
         border-radius: 15px;
         width:70% ;
