@@ -36,5 +36,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Ibhassan01)
-- Twitter - [@yourusername](https://www.twitter.com/Ibhassan01)
+- Frontend Mentor - [@Ibhassan01](https://www.frontendmentor.io/profile/Ibhassan01)
+- Twitter - [@Ibhassan01](https://www.twitter.com/Ibhassan01)
