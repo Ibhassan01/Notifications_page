@@ -76,6 +76,8 @@ section{
     transition: .3s;
 }
 section:hover{
+    scale: 1.05;
+    cursor: pointer;
     box-shadow: 1px 10px 10px rgba(128, 128, 128, 0.447);
 }
 section img{
