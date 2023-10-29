@@ -111,7 +111,7 @@ section p, section span{
     width: 100%;
 }
 .name, .post{
-    font-weight: 700;
+    font-weight: 500;
 }
 .name{
     color: var(--Very-dark-blue);
